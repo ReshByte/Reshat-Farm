@@ -1,0 +1,170 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.header{
+    min-height: 100vh;
+    width:100%;
+    background-image: url("image/back2.jpg"); 
+    background-position: center; 
+    background-size: cover;
+    position:relative;  
+}
+
+nav{
+    display: flex;
+    padding: 3% 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h3{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.nav-menu{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 12px;
+    position: relative;
+}
+
+.nav-menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav-menu ul li::after{
+    content: '';
+    width: 0px;
+    height: 5px;
+    background: black;
+    display: block;
+    margin: auto;
+    position: absolute;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.nav-menu ul li:hover::after{
+    width: 100%; 
+}
+
+.profile-image{
+    width: 50%;
+    position: absolute;
+    top: 21.2%;
+    left: 32%;
+    transform: translate(25%, -28%);  
+}
+
+.titlediscription{
+    width: 80%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+}
+
+.titlediscription h1{
+    font-size: 60px;
+}
+
+.titlediscription p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: white;
+}
+
+.titlediscription a{
+    display: inline-block;
+    text-decoration: none;
+    color:  #ffffff;
+    border: 2px solid white;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    padding: 13px 30px;
+    font-size: 14px;
+
+}
+
+.titlediscription a:hover{
+    background: green;
+    border: 2px solid black;
+    transition: 1s;
+}
+
+nav span{
+    display:none;
+}
+
+@media(max-width:700px){
+    
+.titlediscription{
+    width: 80%;
+    color: white;
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.titlediscription h1{
+    font-size: 25px;
+}
+
+nav span{
+    display: block;
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-menu{
+    position: absolute;
+    background: rgba(0,0,0,0.2);
+    height: 100vh;
+    width: 300px;
+    top: 0;
+    right: -300px;
+    text-align: left;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.nav-menu ul li{
+    display: block;
+    margin: 10px 0;
+}
+
+.nav-menu ul{
+    padding: 20px;
+}
+
+.profile-image{
+    width: 80%;
+    position: absolute;
+    top: 60.45%;
+    left: -13%;
+    transform: translate(25%, -28%);  
+}
+
+}
+
+
+
+
